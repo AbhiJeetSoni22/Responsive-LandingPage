@@ -1,0 +1,318 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    max-width: 80vw;
+    font-family: 'Ubuntu', sans-serif;
+}
+.logo{
+    transition: all 0.5s ease;
+    font-size: 25px;
+}
+.logo:hover{
+    cursor: pointer;
+    transform: scale(1.2);
+}
+.navbar{
+    display: flex;
+    height: 67px;
+}
+.navbar li{
+    border-radius: 10px 10px;
+    padding: 2px;
+    list-style: none;
+    margin: 0 12px;
+    transition: all 0.5s;
+}
+.navbar li:hover{
+    background-color: rgb(161, 160, 160);
+    cursor: pointer;
+    transform: scale(1.2);
+}
+@media screen and (max-width: 900px) {
+    header ul li{
+        display: none !important;
+    }
+    .logo{
+        margin: 30px 30px 30px 30px;
+    }
+    .dumbellimg {
+        width: 200px;
+    }
+}
+.topleft{
+    width: 50%;
+}
+
+.topright{ 
+    width: 50%;
+}
+
+.section1{
+   max-height: 100vh; 
+   color: #711e15;
+}
+
+.section1 h1{
+    color: #37110d;
+    font-size: 2rem;
+}
+
+.logo{
+    font-size: 2rem;
+}
+
+.dumbellimg{
+    width: 289px;
+}
+.topright .gymimg{
+    width: 466px;
+}
+
+@media screen and (max-width: 900px) {
+  
+    .dumbellimg {
+        width: 150px;
+    }
+    .section1 h1 {
+        color: #37110d;
+        font-size: 1.5rem;
+    }
+    .section1 p {
+        font-size: 12.5px;
+    }
+    .topright .gymimg {
+        width: 320px;
+    }
+}
+@media screen and (max-width: 700px) {
+  
+    .dumbellimg {
+        width: 80px;
+    }
+    .section1 h1 {
+        color: #37110d;
+        font-size: 13px;
+    }
+    .section1 p {
+        font-size: 9px;
+    }
+    .topright .gymimg {
+        width: 181px;
+        height: 304px;
+    }
+}
+
+.section2{
+    padding: 73px;
+}
+
+.section2 h1{
+    font-size: 2.3rem;
+}
+
+.section2 p{
+    padding: 0 8vw;
+    text-align: center;
+}
+@media screen and (max-width: 600px) {
+    .section2{
+        padding: 0px;
+    }
+    .section2 h1{
+        font-size: 1.2rem;
+    }
+    .section2 p{
+        font-size: 9px;
+        padding: 0 8vw;
+        text-align: center;
+    }
+}
+.box{
+    padding: 8px 0;
+    margin: 12px 22px;
+    min-width: 20vw;
+    border: 2px solid rgb(120, 54, 16);
+    border-radius: 8px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+.box-image {
+    width: 80%; /* Full width */
+    height: 300px; /* Adjust the height as needed */
+    overflow: hidden;
+    position: relative;
+}
+
+.box-image img {
+    width: 100%; /* Full width of the container */
+    height: 100%; /* Full height of the container */
+    object-fit: cover; /* Ensures the image covers the entire div without distortion */
+    object-position: center; /* Centers the image */
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.box:hover{
+    box-shadow: 4px 4px 6px rgba(128, 128, 128, 0.5);
+   background-color: rgb(255, 225, 207);
+    transform: scale(1.1);
+}
+.box h2{
+    font-size: 2rem;
+    padding: 15px 0;
+}
+@media screen and (max-width: 600px) {
+    .box h2{
+        font-size: 1.2rem;
+        padding: 8px 0;
+    }
+    .box ul li {
+        font-size: 15px;
+        margin: 10px 2px;
+    }
+}
+.highlighted{
+    font-size: 1.2rem;
+    font-weight: bolder;
+}
+
+.box ul{
+    list-style-type: none;
+}
+
+.box ul li{
+   margin: 12px 2px;
+}
+
+.plantable{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section3 table{
+    width: 100%;
+    margin-bottom: 140px;
+    margin-top: 20px;
+    border-collapse: collapse;
+}
+
+.section3 table th{ 
+    width: 23vw; 
+    border-bottom: 2px solid black;
+    padding: 15px 0;
+} 
+
+.section3 table td{   
+    border-bottom: 2px solid black; 
+} 
+ 
+
+.section3 h1{
+    font-size: 2.3rem;
+}
+
+.section3{
+    padding: 73px;
+}
+/* Section 4 - Contact Us */
+.section4 {
+    background-color: #f9f9f9;
+    padding: 50px 0;
+}
+
+.section4 h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.contact-form .form-group {
+    margin-bottom: 20px;
+}
+
+.contact-form label {
+    font-weight: 600;
+    color: #555;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+.contact-form input[type="text"]:focus,
+.contact-form input[type="email"]:focus,
+.contact-form textarea:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+.contact-form button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+    background-color: #0056b3;
+}
+
+@media screen and (max-width: 600px) {
+    .section3{
+        padding: 20px;
+    }
+    .section3 h1{
+        font-size: 1.2rem;
+    }
+    .section3 p{
+        font-size: 9px;
+        padding: 0 8vw;
+        text-align: center;
+    }
+}
+footer{
+    padding: 23px;
+    text-align: center;
+}
+.buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 12px;
+}
+
+.deal{
+    font-size: 1.2rem;
+    font-weight: bolder;
+    margin: 12px 0;
+}
